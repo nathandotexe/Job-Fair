@@ -58,6 +58,18 @@ html, body, #root {
   .login-container { max-width: 90%; }
 }
 
+.divider {
+  text-align: center; margin: 1.5rem 0;
+  position: relative;
+}
+.divider::before, .divider::after {
+  content: ''; position: absolute; top: 50%;
+  width: 35%; height: 1px; background: #ccc;
+}
+
+.divider::before { left: 0; }
+.divider::after { right: 0; }
+
 .placeholder-container {
   position: relative;
   overflow: hidden;
@@ -97,12 +109,15 @@ html, body, #root {
 
 .login-container {
   position: relative;
-  background-color: #76757560;
+  background: linear-gradient(125deg,#9fedffa8, #0b2c39);
+  opacity: 0.8;
   border-radius: 20px;
   top: 10%;
   font-family: "Plus Jakarta Sans";
+  max-width: 50%;
   margin: 0 auto;
-  *, *::before, *::after { box-sizing: border-box; }
+  padding: 10px;
+  box-shadow: 0 6px 20px rgb(72, 198, 162);
 }
 
 .signup-container {
@@ -183,6 +198,7 @@ z-index: 1;
 .main-body {
     padding: 15px;
 }
+
 .card {
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
 }
@@ -226,4 +242,41 @@ z-index: 1;
 }
 .shadow-none {
     box-shadow: none!important;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+.form-group label {
+  display: block; margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.form-group input {
+  width: 100%; padding: 0.5rem; border: 1px solid #ccc;
+  border-radius: 4px; font-size: 1rem;
+}
+.form-group span[role="alert"] {
+  color: #d32f2f; font-size: 0.875rem; margin-top: 0.25rem;
+  display: block;
+}
+
+.btn-primary {
+  width: 220px; padding: 0.75rem;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  align-items: center;
+  background: #072c4f; border: none;
+  color: #fff; font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #4897f2;
+}
+
+.google-btn {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
 }

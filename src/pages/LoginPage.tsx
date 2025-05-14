@@ -29,7 +29,7 @@ const LoginPage: React.FC = () => {
   };
 
   return (
-    <div className="login-container py-5">
+    <div className="login-container py-5 px-5" style={{marginTop: '100px', marginBottom: '100px'}}>
       <form onSubmit={handleSubmit(onSubmit)} noValidate>
         <div className="form-group">
           <label htmlFor="email">Email address</label>
