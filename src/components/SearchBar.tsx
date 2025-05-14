@@ -5,7 +5,6 @@ function SearchBar() {
         <div className="search-wrapper">
             <div className="search-container">
                 <h4 className="mb-4 text-center">Discover Your Dream Career</h4>
-
                 <div className="position-relative mb-4">
                     <input type="text" className="form-control search-input" placeholder="Search..."/>
                     <button type="submit" className="search-icon">
@@ -18,7 +17,6 @@ function SearchBar() {
                     </button>
                     <i className="bi bi-search position-absolute top-50 end-0 translate-middle-y me-3"></i>
                 </div>
-
                 <div className="search-tags d-flex flex-wrap mb-4">
                     <span className="tag">Technology</span>
                     <span className="tag">Graphic Design</span>
@@ -27,19 +25,16 @@ function SearchBar() {
                     <span className="tag">AI</span>
                     <span className="tag">Machine Learning</span>
                 </div>
-
                 <div className="recent-searches pt-3">
                     <p className="text-muted mb-3">Recent Searches</p>
                     <div className="recent-item d-flex align-items-center">
                         <i className="bi bi-clock-history me-2"></i>
-                            <span>Software Engineer</span>
+                        <span>Software Engineer</span>
                     </div>
-                    
                     <div className="recent-item d-flex align-items-center">
                         <i className="bi bi-clock-history me-2"></i>
                         <span>Javascript Web Developer</span>
                     </div>
-                    
                     <div className="recent-item d-flex align-items-center">
                         <i className="bi bi-clock-history me-2"></i>
                         <span>Laravel Web Developer</span>

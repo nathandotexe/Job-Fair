@@ -9,7 +9,7 @@ function NavBar({ imagepath }: NavbarProps) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark navbar-custom" 
     style={{
-      boxShadow: '0 4px 8px rgb(102, 233, 224)',
+      boxShadow: '0 4px 8px rgb(91, 152, 148)',
       height: '60px',         
       overflow: 'visible',      
       alignItems: 'center',           
@@ -24,23 +24,26 @@ function NavBar({ imagepath }: NavbarProps) {
         <div className="collapse navbar-collapse" id="navbarNav" style={{ marginLeft: '150px' }}>
           <ul className="navbar-nav" style={{ marginRight: '80px' }}>
             <li className="nav-item active">
-              <a className="nav-link" href="#" style={{ fontFamily: 'Plus Jakarta Sans', marginRight: '100px'}}>Home</a>
+              <Link className="nav-link" to="/" style={{ fontFamily: 'Plus Jakarta Sans', marginRight: '100px'}}>Home</Link>
             </li>
             
             <li className="nav-item">
-              <a className="nav-link" href="#" style={{ fontFamily: 'Plus Jakarta Sans', marginRight: '100px'}}>My Network</a>
+              <Link className="nav-link" to="/network" style={{ fontFamily: 'Plus Jakarta Sans', marginRight: '100px'}}>My Network</Link>
             </li>
         
             <li className="nav-item">
-              <a className="nav-link" href="#" style={{ fontFamily: 'Plus Jakarta Sans', marginRight: '100px'}}>Job Opportunities</a>
+              <Link className="nav-link" to="/job" style={{ fontFamily: 'Plus Jakarta Sans', marginRight: '100px'}}>Job Opportunities</Link>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#" style={{ fontFamily: 'Plus Jakarta Sans', marginRight: '100px'}}>Contact Us</a>
+              <Link className="nav-link" to="/contact" style={{ fontFamily: 'Plus Jakarta Sans', marginRight: '100px'}}>Contact Us</Link>
             </li>
 
-            <a href="./" type="button" style={{fontSize: '20px', color: '#DCDCDD'}} className="btn btn-outline-dark ms-auto me-2"> Sign In </a>
-            <a href="./" type="button" style={{fontSize: '20px', color: '#00272B'}} className="btn btn-outline-light ms-auto me-2"> Sign Up </a>
+            <li className="nav-item">
+              <Link className="nav-link" to="/profilepage" style={{ fontFamily: 'Plus Jakarta Sans', marginRight: '100px'}}>My Profile</Link>
+            </li>
+
+            <Link type="button" to="/login" style={{fontSize: '20px', color: '#00272B'}} className="btn btn-outline-light ms-auto me-2">Sign In</Link>
           </ul>
         </div>
     </nav>
