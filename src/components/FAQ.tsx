@@ -48,25 +48,10 @@ function FAQ() {
                     <div className="text-muted me-4">
                     </div>
                     <div>
-                      <h5 className="mb-2 mb-lg-4 fw-bold">How does it work ?</h5>
-                      <p className="m-0">The dash camera first tracks the users driving activity. 
-                        When it detects the user crossing opposing traffic marks,
-                      the algorithm then sends a signal to the camera and screenshot the recorded violation, 
-                      which would be sent to the server database.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="card bg-light p-4">
-                  <div className=" d-flex">
-                    <div className="text-muted me-4">
-                    </div>
-                    <div>
-                      <h5 className="mb-2 mb-lg-4 fw-bold">What are the main components ?</h5>
-                      <p className="m-0">TRAVIS uses an Orange Pi 3b as its storage / middle man, 
-                        which connects data between the camera and the server database.
-                        It utilizes a dash camera to monitor and record activities.
+                      <h5 className="mb-2 mb-lg-4 fw-bold">Where can i access it ?</h5>
+                        <p className="m-0">Find job offers anywhere, anytime. Sign in with your own Job Fair account 
+                        to instantly connect with recruiters from your phone or laptop. Job Fair provides flexibility and convenience
+                        for browsing opportunities, submit applications, and track your progress all in one place 24/7.
                       </p>
                     </div>
                   </div>
@@ -78,8 +63,27 @@ function FAQ() {
                     <div className="text-muted me-4">
                     </div>
                     <div>
-                      <h5 className="mb-2 mb-lg-4 fw-bold">How much does it cost ?</h5>
-                      <p className="m-0">As of right now, TRAVIS is in beta phase and not ready for commercial use.</p>
+                      <h5 className="mb-2 mb-lg-4 fw-bold">How can i connect with recruiters ?</h5>
+                      <p className="m-0">Discover job offers that match your profile and apply to them. Job Fair will
+                        automatically send your application to the recruiter. Recruiters will be able to see your profile and send
+                        you a direct automatic message via Job Fair's algorithm through social media platforms like Whatsapp, Messenger, etc.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="card bg-light p-4">
+                  <div className=" d-flex">
+                    <div className="text-muted me-4">
+                    </div>
+                    <div>
+                      <h5 className="mb-2 mb-lg-4 fw-bold">How much do our services cost ?</h5>
+                      <p className="m-0 tracking-wide"> 
+                                    <strong>- Gold Plan:</strong> <span className="ms-4"> Free ALL </span> <br></br>
+                                    <strong>- Silver Plan:</strong> <span className="ms-3"> Free SOME </span> <br></br>
+                                    <strong>- Bronze Plan:</strong> <span className="ms-3"> Free NONE </span> <br></br>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -91,8 +95,9 @@ function FAQ() {
                     </div>
                     <div>
                       <h5 className="mb-2 mb-lg-4 fw-bold">Why should you choose JOB FAIR ?</h5>
-                      <p className="m-0">It utilizes AI and Machine Learning to automatically provide 
-                        personalized content set and accustomed for each client's needs</p>
+                      <p className="m-0">Our system utilizes machine learning and PMS (Personalization Management System)
+                        to provide you with the best job offers that match your profile.
+                      </p>
                     </div>
                   </div>  
                 </div>

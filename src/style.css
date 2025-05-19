@@ -107,6 +107,10 @@ html, body, #root {
   box-shadow: 0 6px 20px rgb(72, 198, 162);
 }
 
+.mb-2 {
+  height: 5vh;
+}
+
 .login-container {
   position: relative;
   background: linear-gradient(125deg,#9fedffa8, #0b2c39);
