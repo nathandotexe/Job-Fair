@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import ProfilePage from './pages/ProfilePage';
+import ContactPage from './pages/Contact';
 import { GoogleOAuthProvider } from '@react-oauth/google';
 
 const App: React.FC = () => {
@@ -22,6 +23,7 @@ const App: React.FC = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/profilepage" element={<ProfilePage />} />
+          <Route path="/contact" element={<ContactPage />}  />
           </Routes>
       </Router>
     </GoogleOAuthProvider>

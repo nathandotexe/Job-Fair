@@ -147,9 +147,6 @@ const ProfilePage: React.FC = () => {
                   <div className="card h-100">
                     <div className="card-body">
                       <h6 className="d-flex align-items-center mb-3">
-                        <i className="material-icons text-info mr-2">
-                          assignment
-                        </i>
                         Project Status
                       </h6>
                       <small>
