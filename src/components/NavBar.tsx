@@ -51,7 +51,7 @@ function NavBar({ imagepath }: NavbarProps) {
 
         <div className={`collapse navbar-collapse justify-content-center ${isNavOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav d-flex flex-wrap justify-content-center w-100 text-center">
-            {['/', '/network', '/job', '/contact', '/profilepage'].map((path, idx) => {
+            {['/', '/network', '/jobinfo', '/contact', '/profilepage'].map((path, idx) => {
               const labels = ['Home', 'My Network', 'Job Opportunities', 'Contact Us', 'My Profile'];
               return (
                 <li key={idx} className="nav-item">

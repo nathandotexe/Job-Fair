@@ -15,7 +15,7 @@ function FAQ() {
           <div className="col-md-10">
             <div className="row g-3 g-md-4">
               <div className="col-lg-6">
-                <div className="card bg-light p-4">
+                <div className="card bg-light p-4 faq-card">
                   <div className=" d-flex">
                     <div className="text-muted me-4">
                     </div>
@@ -29,7 +29,7 @@ function FAQ() {
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="card bg-light p-4">
+                <div className="card bg-light p-4 faq-card">
                   <div className=" d-flex">
                     <div className="text-muted me-4">
                     </div>
@@ -43,7 +43,7 @@ function FAQ() {
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="card bg-light p-4">
+                <div className="card bg-light p-4 faq-card">
                   <div className=" d-flex">
                     <div className="text-muted me-4">
                     </div>
@@ -58,7 +58,7 @@ function FAQ() {
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="card bg-light p-4">
+                <div className="card bg-light p-4 faq-card">
                   <div className=" d-flex">
                     <div className="text-muted me-4">
                     </div>
@@ -73,7 +73,7 @@ function FAQ() {
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="card bg-light p-4">
+                <div className="card bg-light p-4 faq-card">
                   <div className=" d-flex">
                     <div className="text-muted me-4">
                     </div>
@@ -89,7 +89,7 @@ function FAQ() {
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="card bg-light p-4">
+                <div className="card bg-light p-4 faq-card">
                   <div className=" d-flex">
                     <div className="text-muted me-4">
                     </div>

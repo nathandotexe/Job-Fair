@@ -15,9 +15,21 @@ const LoginPage: React.FC = () => {
 
   const onSubmit: SubmitHandler<LoginInputs> = async data => {
     try {
-      navigate('/dashboard');
+      const res = await fetch("http://localhost:8080/api/signin", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      const result = await res.json();
+      if (res.ok) {
+        navigate("/dashboard");
+      } else {
+        alert(result.error);
+      }
     } catch (err) {
       console.error(err);
+      alert("Server error");
     }
   };
 
