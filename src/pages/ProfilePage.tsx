@@ -1,36 +1,32 @@
 import React, {useState} from 'react';
+import { useAuth } from '../contexts/AuthContext';
 import '../style.css';
 import NavBar from '../components/NavBar';
 import imagepath from '../assets/logo.png';
 import BottomBar from '../components/BottomBar';
 
 const ProfilePage: React.FC = () => {
-    const [isLoggedIn, setIsLoggedIn] = useState(true);
-    const handleLogout = () => {
-        setIsLoggedIn(false);
-        };
+    const { isLoggedIn, logout } = useAuth();
 
+    if (!isLoggedIn) {
+        return (
+            <>
+                <NavBar imagepath={imagepath} />
+                <div className="container py-5">
+                    <div className="text-center">
+                        <h2>Please log in to view your profile</h2>
+                        <a href="/login" className="btn btn-primary">Go to Login</a>
+                    </div>
+                </div>
+            </>
+        );
+    }
+    
   return (
     <>
     <NavBar imagepath={imagepath} />
     <div className="container py-5">
       <div className="main-body">
-        <nav aria-label="breadcrumb" className="main-breadcrumb">
-          <ol className="breadcrumb">
-            <li className="breadcrumb-item">
-              <a href="index.html">Home</a>
-            </li>
-            <li className="breadcrumb-item">
-              <a href="javascript:void(0)">User</a>
-            </li>
-            <li
-              className="breadcrumb-item active"
-              aria-current="page"
-            >
-              User Profile
-            </li>
-          </ol>
-        </nav>
 
         <div className="row gutters-sm">
           {/* Left Sidebar */}
@@ -52,7 +48,7 @@ const ProfilePage: React.FC = () => {
                     <p className="text-muted font-size-sm">
                       Bay Area, San Francisco, CA
                     </p>
-                    <button className="btn btn-primary">
+                    <button className="btn btn-primary" style={{ marginBottom: '10px'}}>
                       Follow
                     </button>
                     <button className="btn btn-outline-primary">
@@ -132,7 +128,7 @@ const ProfilePage: React.FC = () => {
                     <a
                       className="btn btn-info"
                       target="__blank"
-                      href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills"
+                      href="/profilepage"
                     >
                       Edit
                     </a>

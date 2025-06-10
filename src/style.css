@@ -245,7 +245,6 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
   z-index: 0;
 }
 
-
 .faq-container {
   opacity: 0.8;
   background: linear-gradient(105deg, #ffffffa8, #0b2c39);
@@ -281,6 +280,17 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
   top: 10%;
   font-family: "Plus Jakarta Sans";
   max-width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  box-shadow: 0 6px 20px rgb(72, 198, 162);
+}
+
+.contact-container {
+  position: relative;
+  background: linear-gradient(125deg,#074958a8, #0b2c39);
+  opacity: 0.8;
+  top: 10%;
+  font-family: "Plus Jakarta Sans";
   margin: 0 auto;
   padding: 10px;
   box-shadow: 0 6px 20px rgb(72, 198, 162);
@@ -374,6 +384,38 @@ z-index: 1;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
+.info-card {
+    border: none;
+    border-left: 4px solid #0d6efd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 0.75rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.info-card .icon-wrapper {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.info-card .icon-wrapper i {
+    font-size: 1.5rem;
+}
+
+.alert {
+    border-radius: 0.5rem;
+}
+
 .card {
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
 }
@@ -394,6 +436,7 @@ z-index: 1;
     flex: 1 1 auto;
     min-height: 1px;
     padding: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
 }
 
 .job-card {
@@ -427,6 +470,16 @@ z-index: 1;
 }
 .shadow-none {
     box-shadow: none!important;
+}
+
+.form-label {
+    display: block; 
+    margin-bottom: 0.5rem; 
+    font-size: 0.9rem; 
+    font-weight: 600; 
+    color: #4A5568; 
+    letter-spacing: 0.025em; 
+    line-height: 1.5;
 }
 
 .form-group {
